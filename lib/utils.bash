@@ -84,12 +84,12 @@ get_machine_processor() {
 }
 
 
-get_release_archive_extension () {
+get_release_archive_extension() {
   os=$(get_machine_os)
   processor=$(get_machine_processor)
 
   case "${os}_${processor}" in
-  darwin*) echo "zip";;
-  *) echo "tar.gz";;
+  darwin*) echo "zip" ;;
+  *) echo "tar.gz" ;;
   esac
 }
